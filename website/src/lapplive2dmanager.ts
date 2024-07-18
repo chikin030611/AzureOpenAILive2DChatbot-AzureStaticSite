@@ -118,7 +118,7 @@ export class LAppLive2DManager {
         }
 
         const prompt: string = (document.getElementById("prompt") as any).value;
-        const language: string = (document.getElementById("language") as any).value;       
+        const language: string = (document.getElementById("language") as any).value;
 
         const azureAi = new AzureAi();
         azureAi.getOpenAiAnswer(prompt)
