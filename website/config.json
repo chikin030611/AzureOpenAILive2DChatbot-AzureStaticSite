@@ -1,0 +1,6 @@
+{
+  "openaiurl": "https://westus2.openai.azure.com/openai/deployments/<CHANGEHERE>/completions?api-version=2022-12-01",
+  "openaipikey": "",
+  "ttsregion": "westus2",
+  "ttsapikey": "c363a081a77749298842547ca1112c8c"
+}

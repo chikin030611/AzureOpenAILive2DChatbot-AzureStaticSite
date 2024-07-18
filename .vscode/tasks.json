@@ -1,0 +1,101 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    // Tasks for Samples/TypeScript/Demo
+    {
+      "type": "npm",
+      "script": "install",
+      "path": "website/",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "start",
+      "path": "website/",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "path": "website/",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "build:prod",
+      "path": "website/",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "test",
+      "path": "website/",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "lint",
+      "path": "website/",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "lint:fix",
+      "path": "website/",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "clean",
+      "path": "website/",
+      "problemMatcher": []
+    },
+    // Tasks for Framework
+    {
+      "type": "npm",
+      "script": "install",
+      "path": "Framework/",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "path": "Framework/",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "test",
+      "path": "Framework/",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "lint",
+      "path": "Framework/",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "lint:fix",
+      "path": "Framework/",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "clean",
+      "path": "Framework/",
+      "problemMatcher": []
+    }
+  ]
+}
