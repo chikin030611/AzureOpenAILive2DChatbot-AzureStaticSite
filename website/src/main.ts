@@ -7,6 +7,7 @@
 
 import { LAppDelegate } from './lappdelegate';
 import * as LAppDefine from './lappdefine';
+import { LAppPal } from './lapppal';
 
 /**
  * ブラウザロード後の処理
@@ -39,4 +40,7 @@ window.onresize = () => {
 };
 (window as any).startTextConversation = (language: string, message: string) => {
   LAppDelegate.getInstance().startTextConversation(language, message);
+};
+(window as any).startSpeakingText = (language: string, text: string) => {
+  LAppDelegate.getInstance().startSpeakingText(language, text);
 };

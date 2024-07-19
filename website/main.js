@@ -163,6 +163,32 @@ $(document).ready(async () => {
   const msgerInput = get(".msger-input");
   const msgerChat = get(".msger-chat");
 
+    const qnaMap = {
+    "你可以做到啲咩？": "我可以提供資訊、娛樂同答問題。",
+    "海洋公園有啲咩玩？": "海洋公園有過山車、表演同埋水族館。",
+    "海洋公園有啲咩食？": "海洋公園有各種餐廳、仲有小食舖。",
+    "海洋公園有啲咩動物？": "海洋公園有海豚、海獅同其他海洋生物。"
+  };
+
+  $("#question1Button").click(() => {
+    askQuestion("你可以做到啲咩？");
+  });
+  $("#question2Button").click(() => {
+    askQuestion("海洋公園有啲咩玩？");
+  });
+  $("#question3Button").click(() => {
+    askQuestion("海洋公園有啲咩食？");
+  });
+  $("#question4Button").click(() => {
+    askQuestion("海洋公園有啲咩動物？");
+  });
+
+  function askQuestion(question) {
+    var answer = qnaMap[question];
+    appendMessage(PERSON_NAME, PERSON_IMG, "right", question);
+    appendMessage(BOT_NAME, BOT_IMG, "left", answer);
+    startSpeakingText($("#language").val(), answer);
+  }
 
   // Icons made by Freepik from www.flaticon.com
   const BOT_IMG = "images/bot.png";

@@ -265,6 +265,10 @@ export class LAppDelegate {
     LAppLive2DManager.getInstance().startTextConversation(language, message);
   }
 
+  public startSpeakingText(language: string, message: string) {
+    LAppLive2DManager.getInstance().startSpeakingText(language, message);
+  }
+
 
 
   /**

@@ -1,6 +1,6 @@
 {
-  "openaiurl": "https://westus2.openai.azure.com/openai/deployments/<CHANGEHERE>/completions?api-version=2022-12-01",
-  "openaipikey": "",
+  "openaiurl": "https://jtsoft-open-ai.openai.azure.com/openai/deployments/jtsoft-gpt-35-turbo/completions?api-version=2024-05-01-preview",
+  "openaipikey": "e0669b14fa844b40bc6b9b6356afa7b5",
   "ttsregion": "westus2",
   "ttsapikey": "c363a081a77749298842547ca1112c8c"
 }

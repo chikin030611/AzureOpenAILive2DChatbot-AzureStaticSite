@@ -12,6 +12,7 @@
     "paths": {
       "@framework/*": ["../Framework/src/*"]
     },
+    "skipLibCheck": true // Add this line
   },
   "include": [
     "src/**/*.ts",

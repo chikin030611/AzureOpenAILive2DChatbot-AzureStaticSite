@@ -163,6 +163,28 @@ export class LAppLive2DManager {
     }
   }
 
+  public startSpeakingText(language: string, message: string) {
+    for (let i = 0; i < this._models.getSize(); i++) {
+      if (LAppDefine.DebugLogEnable) {
+        LAppPal.printMessage(
+          `startSpeakingText`
+        );
+        const azureAi = new AzureAi();
+        azureAi.getSpeechUrl(language, message)
+          .then(url => {
+            this._models.at(i)._wavFileHandler.loadWavFile(url);
+            this._models
+              .at(i)
+              .startRandomMotion(
+                LAppDefine.MotionGroupTapBody,
+                LAppDefine.PriorityNormal,
+                this._finishedMotion
+              );
+          });
+      }
+    }
+  }
+
   public startVoiceConversation(language: string, data: Blob) {
     for (let i = 0; i < this._models.getSize(); i++) {
       if (LAppDefine.DebugLogEnable) {
