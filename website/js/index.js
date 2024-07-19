@@ -210,8 +210,8 @@ $(document).ready(async () => {
     var answer = qnaMap[question];
     appendMessage(PERSON_NAME, PERSON_IMG, "right", question);
     appendMessage(BOT_NAME, BOT_IMG, "left", answer);
-    // startSpeakingText($("#language").val(), answer);
-    startTextConversation($("#language").val(), answer);
+    startSpeakingText($("#language").val(), answer);
+    // startTextConversation($("#language").val(), answer);
   }
 
   // Icons made by Freepik from www.flaticon.com

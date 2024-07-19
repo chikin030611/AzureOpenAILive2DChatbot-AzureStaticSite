@@ -75,7 +75,7 @@ export class AzureAi {
     };
 
 
-    const repsonse = await fetch(this._openaiurl, {
+    const response = await fetch(this._openaiurl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -83,7 +83,7 @@ export class AzureAi {
       },
       body: JSON.stringify(m)
     });
-    const json = await repsonse.json();
+    const json = await response.json();
 
     const answer: string = json.choices[0].message.content;
     messages.push({ role: "assistant", content: answer });
