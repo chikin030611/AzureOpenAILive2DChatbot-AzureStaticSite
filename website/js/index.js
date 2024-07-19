@@ -185,6 +185,7 @@ $(document).ready(async () => {
   //   3: "海洋公園有啲咩食？",
   //   4: "海洋公園有啲咩動物？"
   // };
+
   const qnaMap = {
     "你可以做到啲咩？": "我可以提供資訊、娛樂同答問題。",
     "海洋公園有啲咩玩？": "海洋公園有過山車、表演同埋水族館。",
@@ -208,22 +209,23 @@ $(document).ready(async () => {
   function askQuestion(question) {
     appendMessage(PERSON_NAME, PERSON_IMG, "right", question);
     appendMessage(BOT_NAME, BOT_IMG, "left", qnaMap[question]);
-    // textToSpeech($("#language").val(), qnaMap[question]);
+    textToSpeech($("#language").val(), qnaMap[question]);
   }
 
   // TODO
   // Function to start a text conversation and play the response as speech
-  // function textToSpeech(language, message) {
-  //   console.log("Text to speech:", message);
-  //   const azureAi = new AzureAi(); // Initialize Azure AI
-  //   azureAi.getOpenAiAnswer(message) // Get AI answer for the message
-  //     .then(ans => azureAi.getSpeechUrl(language, ans)) // Get speech URL for the answer
-  //     .then(url => {
-  //       const audio = new Audio(url); // Create an audio element with the speech URL
-  //       audio.play(); // Play the speech
-  //     })
-  //     .catch(error => console.error("Error in text conversation:", error)); // Handle any errors
-  // }
+  function textToSpeech(language, message) {
+    console.log("Text to speech:", message);
+    // const azureAi = new azureAi(); // Initialize Azure AI
+    // azureAi.getOpenAiAnswer(message) // Get AI answer for the message
+    //   .then(ans => azureAi.getSpeechUrl(language, ans)) // Get speech URL for the answer
+    //   .then(url => {
+    //     const audio = new Audio(url); // Create an audio element with the speech URL
+    //     audio.play(); // Play the speech
+    //   })
+    //   .catch(error => console.error("Error in text conversation:", error)); // Handle any errors
+  }
+
 
   // Icons made by Freepik from www.flaticon.com
   const BOT_IMG = "images/bot.png";
