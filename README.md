@@ -1,10 +1,8 @@
 # Azure OpenAI Live2D Virtual Assistant
 
-This is a sample implementation of an application that displays models output by Live2D Cubism 4 Editor from Cubism Web Samples with Azure OpenAI and Azure Text to Speech.
+This is a sample implementation of an application that displays models output by Live2D Cubism from Cubism Web Samples with Azure OpenAI and Azure Text to Speech.
 
 It is used in conjunction with the Cubism Web Framework and Live2D Cubism Core.
-
-![Azure OpenAI Live2D Virtual Assistan Overview](Images/Live2DAzureOpenAIChatbot.png "Overview")
 
 ## Directory structure
 ```
@@ -16,41 +14,34 @@ It is used in conjunction with the Cubism Web Framework and Live2D Cubism Core.
 ├─ cdktf            # Directory containing source code for Azure deployment.
 ```
 
-## Live2D Cubism Core for Web
+## Getting Started
 
-A library for loading the model.
+### Prerequisites
 
-This repository does not manage Cubism Core.
-Download the Cubism SDK for Web from [here](https://www.live2d.com/download/cubism-sdk/download-web/) and copy the files in the Core directory.
+- `\website\config.json`: Only fill in `ttsregion` and `ttsapikey`. `openaiurl` and `openaipikey` can be left blank as we are not using AI feature.
+- **Azure Speech service**: No special requirement (location, pricing tier) is needed as we are only using the TTS synthesis service.
 
+### How to run
 
-## Development environment construction
+1. Set up the repository
+ ```
+  git clone https://github.com/chikin030611/AzureOpenAILive2DChatbot-AzureStaticSite.git
 
-1. Create a new CodeSpace.
-2. Install [Node.js] and [Visual Studio Code]
-3. Open **the top directory of this SDK** in Visual Studio Code and install the recommended extensions
-    * In addition to pop-up notifications, you can check the others by typing `@recommended` from the Extensions tab
-4. You need to go to Live2D website to get your free license packages.
-5. Copy the file to Framework.
+  cd website
 
-### Operation check of sample demo
+  npm install
 
-Enter `>Tasks: Run Task` in the command palette (*View > Command Palette...*) to display the task list.
+  npm run build
 
-1. Select `npm: install - Samples/TypeScript/Demo` from the task list to download the dependent packages
-1. Select `npm: build - Samples/TypeScript/Demo` from the task list to build the sample demo
-1. Select `npm: serve - Samples/TypeScript/Demo` from the task list to start the simple server for operation check
-1. Enter `http://localhost:5000/website/` in the URL field of your browser to access it
-1. Enter `>Tasks: Terminate Task` from the command palette and select `npm: serve` to terminate the simple server
+  npm run serve
+```
+2. Find the `website/` folder and open it up.
+3. At the top left corner, select file.
+4. Select `website\config.json`
 
-For other tasks, see [README.md](Samples/TypeScript/README.md) of the sample project.
+### How to use
 
-NOTE: Settings for debugging are described in `.vscode/tasks.json`.
+By pressing question buttons on top of the chatbox, a question is asked. Avatar will speak aloud the answer.
 
-## Development environment
+Whenever a question is asked, avatar sends the certain preset answer text to Azure Speech service which will later send back a WAVE audio file to client. The Live2D model sync the lips and plays the audio.
 
-### Node.js
-
-* 18.8.0
-* 16.17.0
-* 14.20.0
