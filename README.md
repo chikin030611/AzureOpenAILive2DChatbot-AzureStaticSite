@@ -1,5 +1,7 @@
 # Azure OpenAI Live2D Virtual Assistant
 
+[中文版README](https://github.com/chikin030611/AzureOpenAILive2DChatbot-AzureStaticSite/blob/main/README_ZH.md)
+
 This is a sample implementation of an application that displays models output by Live2D Cubism from Cubism Web Samples with Azure OpenAI and Azure Text to Speech.
 
 It is used in conjunction with the Cubism Web Framework and Live2D Cubism Core.
