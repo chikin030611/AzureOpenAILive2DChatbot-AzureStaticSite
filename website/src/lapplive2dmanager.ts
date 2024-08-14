@@ -175,8 +175,9 @@ export class LAppLive2DManager {
             this._models.at(i)._wavFileHandler.loadWavFile(url);
             this._models
               .at(i)
-              .startRandomMotion(
-                LAppDefine.MotionGroupTapBody,
+              .startMotion(
+                LAppDefine.MotionGroupIdle,
+                0,
                 LAppDefine.PriorityNormal,
                 this._finishedMotion
               );
@@ -201,8 +202,9 @@ export class LAppLive2DManager {
             this._models.at(i)._wavFileHandler.loadWavFile(url);
             this._models
               .at(i)
-              .startRandomMotion(
-                LAppDefine.MotionGroupTapBody,
+              .startMotion(
+                LAppDefine.MotionGroupIdle,
+                0,
                 LAppDefine.PriorityNormal,
                 this._finishedMotion
               );

@@ -1,6 +1,6 @@
 {
-  "openaiurl": "https://jtsoft-open-ai.openai.azure.com/openai/deployments/jtsoft-gpt-35-turbo/chat/completions?api-version=2024-06-01",
-  "openaipikey": "e0669b14fa844b40bc6b9b6356afa7b5",
+  "openaiurl": "",
+  "openaipikey": "",
   "ttsregion": "westus2",
   "ttsapikey": "c363a081a77749298842547ca1112c8c"
 }
