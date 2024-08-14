@@ -1,6 +1,6 @@
 # Azure OpenAI Live2D 虛擬助手
 
-* 此README使用了AI由英文翻譯為中文。如有任何句子不通順的問題，建議參考英文版。
+\* 此README使用了AI由英文翻譯為中文。如有任何句子不通順的問題，建議參考英文版。
 
 這是一個應用程式的範例實現，該應用程式顯示由 Live2D Cubism 從 Cubism Web Samples 輸出的模型，並結合 Azure OpenAI 和 Azure 語音合成。
 
