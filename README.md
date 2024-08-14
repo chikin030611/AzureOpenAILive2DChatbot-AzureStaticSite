@@ -25,15 +25,20 @@ It is used in conjunction with the Cubism Web Framework and Live2D Cubism Core.
 
 1. Set up the repository
  ```
-  git clone https://github.com/chikin030611/AzureOpenAILive2DChatbot-AzureStaticSite.git
+# Clone the repository 
+git clone https://github.com/chikin030611/AzureOpenAILive2DChatbot-AzureStaticSite.git
 
-  cd website
+# Change directory to the 'website' folder
+cd website
 
-  npm install
+# Install the necessary dependencies specified in package.json
+npm install
 
-  npm run build
+# Build the project
+npm run build
 
-  npm run serve
+# Serve the project locally
+npm run serve
 ```
 2. Find the `website/` folder and open it up.
 3. At the top left corner, select file.
@@ -41,7 +46,6 @@ It is used in conjunction with the Cubism Web Framework and Live2D Cubism Core.
 
 ### How to use
 
-By pressing question buttons on top of the chatbox, a question is asked. Avatar will speak aloud the answer.
+By pressing question button on top of the chatbox, a question is asked. Avatar will speak aloud the answer.
 
 Whenever a question is asked, avatar sends the certain preset answer text to Azure Speech service which will later send back a WAVE audio file to client. The Live2D model sync the lips and plays the audio.
-
