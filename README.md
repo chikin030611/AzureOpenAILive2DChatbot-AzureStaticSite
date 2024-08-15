@@ -20,7 +20,6 @@ It is used in conjunction with the Cubism Web Framework and Live2D Cubism Core.
 
 ### Prerequisites
 
-- `\website\config.json`: Only fill in `ttsregion` and `ttsapikey`. `openaiurl` and `openaipikey` can be left blank as we are not using AI feature.
 - **Azure Speech service**: No special requirement (location, pricing tier) is needed as we are only using the TTS synthesis service.
 
 ### How to run
@@ -41,10 +40,12 @@ npm run build
 
 # Serve the project locally
 npm run serve
+
 ```
-2. Find the `website/` folder and open it up.
-3. At the top left corner, select file.
-4. Select `website\config.json`
+2. Find `\website\config.json` and fill in `ttsregion` and `ttsapikey` (**Azure Speech service**). `openaiurl` and `openaipikey` can be left blank as we are not using AI feature.
+3. Go to local address. Find the `website/` folder and open it up.
+4. At the top left corner, select file.
+5. Select `website\config.json`
 
 ### How to use
 
