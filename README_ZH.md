@@ -20,7 +20,6 @@
 
 ### 先決條件
 
-- `\website\config.json`: 只填寫`ttsregion`和`ttsapikey`。 `openaiurl` 和 `openaipikey` 可以留空，因為我們不使用 AI 功能。
 - **Azure 語音服務**：不需要特殊要求（位置、定價等級），因為我們只使用 TTS 合成服務。
 
 ### 如何運行
@@ -41,10 +40,12 @@ npm run build
 
 # 本地服務項目
 npm run serve
+
 ```
-2. 找到 `website/` 文件夾並打開它。
-3. 在左上角，選擇文件。
-4. 選擇 `website\config.json`
+2. 找到 `\website\config.json` ，並填寫`ttsregion`和`ttsapikey` (**Azure 語音服務**)。 `openaiurl` 和 `openaipikey` 可以留空，因為我們不使用 AI 功能。
+3. 找到 `website/` 文件夾並打開它。
+4. 在左上角，選擇文件。
+5. 選擇 `website\config.json`
 
 ### 如何使用
 
