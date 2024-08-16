@@ -1,4 +1,4 @@
-# Azure OpenAI Live2D Virtual Assistant
+# Azure OpenAI Live2D Virtual Assistant ( Live2D model with preset answer (Javascript) )
 
 [中文版README](https://github.com/chikin030611/AzureOpenAILive2DChatbot-AzureStaticSite/blob/main/README_ZH.md)
 
